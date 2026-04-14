@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>BHQ Batik H. Baihaqi | Galeri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade">
+
+<header>
+  <div class="logo">BHQ Batik H. Baihaqi</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav id="nav">
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang Kami</a>
+    <a href="gallery.html" class="active">Galeri</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="gallery">
+  <h2 class="koleksi-title">Koleksi Motif BHQ Batik H. Baihaqi</h2>
+
+  <!-- 1 -->
+  <div class="card" onclick="bukaModal('Batik Parang','gambar/parang.jpg','Rp 500.000','Rp 1.000.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/parang.jpg">
+    <h3>Batik Parang</h3>
+    <span>Rp 1.000.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Parang','Rp 1.000.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 2 -->
+  <div class="card" onclick="bukaModal('Batik Mega Mendung','gambar/megamendung.jpg','Rp 1.150.000','Rp 2.300.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/megamendung.jpg">
+    <h3>Batik Mega Mendung</h3>
+    <span>Rp 2.300.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Mega Mendung','Rp 2.300.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 3 -->
+  <div class="card" onclick="bukaModal('Batik Kawung','gambar/kawungg.jpg','Rp 495.000','Rp 990.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/kawungg.jpg">
+    <h3>Batik Kawung</h3>
+    <span>Rp 990.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Kawung','Rp 990.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 4 -->
+  <div class="card" onclick="bukaModal('Batik Tulis','gambar/tulis.jpg','Rp 1.290.000','Rp 2.580.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/tulis.jpg">
+    <h3>Batik Tulis</h3>
+    <span>Rp 2.580.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Tulis','Rp 2.580.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 5 -->
+  <div class="card" onclick="bukaModal('Batik Lasem','gambar/lasem.jpg','Rp 550.000','Rp 1.100.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/lasem.jpg">
+    <h3>Batik Lasem</h3>
+    <span>Rp 1.100.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Lasem','Rp 1.100.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 6 -->
+  <div class="card" onclick="bukaModal('Batik Pekalongan','gambar/pekalongann.jpg','Rp 920.000','Rp 1.840.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/pekalongann.jpg">
+    <h3>Batik Pekalongan</h3>
+    <span>Rp 1.840.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Pekalongan','Rp 1.840.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 7 -->
+  <div class="card" onclick="bukaModal('Batik Pesisir','gambar/pesisir.jpg','Rp 750.000','Rp 1.500.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/pesisir.jpg">
+    <h3>Batik Pesisir</h3>
+    <span>Rp 1.500.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Pesisir','Rp 1.500.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 8 -->
+  <div class="card" onclick="bukaModal('Batik Sogan','gambar/sogan.jpg','Rp 500.000','Rp 1.000.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/sogan.jpg">
+    <h3>Batik Sogan</h3>
+    <span>Rp 1.000.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Sogan','Rp 1.000.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 9 -->
+  <div class="card" onclick="bukaModal('Batik Sekar Jagad','gambar/sekarjagad.jpeg','Rp 1.150.000','Rp 2.300.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/sekarjagad.jpeg">
+    <h3>Batik Sekar Jagad</h3>
+    <span>Rp 2.300.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Sekar Jagad','Rp 2.300.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 10 -->
+  <div class="card" onclick="bukaModal('Batik Sidomukti','gambar/sidomukti.jpg','Rp 725.000','Rp 1.450.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/sidomukti.jpg">
+    <h3>Batik Sidomukti</h3>
+    <span>Rp 1.450.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Sidomukti','Rp 1.450.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 11 -->
+  <div class="card" onclick="bukaModal('Batik Tujuh Rupa','gambar/tujuhrupa.jpg','Rp 800.000','Rp 1.600.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/tujuhrupa.jpg">
+    <h3>Batik Tujuh Rupa</h3>
+    <span>Rp 1.600.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Tujuh Rupa','Rp 1.600.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 12 -->
+  <div class="card" onclick="bukaModal('Batik Jlamprang','gambar/jlamprangg.jpg','Rp 2.000.000','Rp 3.999.999')">
+    <div class="card-overlay"></div>
+    <img src="gambar/jlamprangg.jpg">
+    <h3>Batik Jlamprang</h3>
+    <span>Rp 3.999.999</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Jlamprang','Rp 3.999.999', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 13 -->
+  <div class="card" onclick="bukaModal('Batik Gentongan','gambar/gentongan.jpg','Rp 1.250.000','Rp 2.500.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/gentongan.jpg">
+    <h3>Batik Gentongan</h3>
+    <span>Rp 2.500.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Gentongan','Rp 2.500.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 14 -->
+  <div class="card" onclick="bukaModal('Batik Gurda','gambar/gurda.jpg','Rp 1.150.000','Rp 2.300.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/gurda.jpg">
+    <h3>Batik Gurda</h3>
+    <span>Rp 2.300.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Gurda','Rp 2.300.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 15 -->
+  <div class="card" onclick="bukaModal('Batik Coletan','gambar/coletan.jpg','Rp 75.000','Rp 150.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/coletan.jpg">
+    <h3>Batik Coletan</h3>
+    <span>Rp 150.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Coletan','Rp 150.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 16 -->
+  <div class="card" onclick="bukaModal('Batik Remekan','gambar/cipratan.jpg','Rp 65.000','Rp 130.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/cipratan.jpg">
+    <h3>Batik Remekan</h3>
+    <span>Rp 130.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Remekan','Rp 130.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 17 -->
+  <div class="card" onclick="bukaModal('Batik Awan Tulis','gambar/awan.jpg','Rp 250.000','Rp 500.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/awan.jpg">
+    <h3>Batik Awan Tulis</h3>
+    <span>Rp 500.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Awan Tulis','Rp 500.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 18 -->
+  <div class="card" onclick="bukaModal('Batik Cap','gambar/cap.jpg','Rp 50.000','Rp 100.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/cap.jpg">
+    <h3>Batik Cap</h3>
+    <span>Rp 100.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Cap','Rp 100.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 19 -->
+  <div class="card" onclick="bukaModal('Batik Lukis Kontemporer','gambar/lukiskontemporer.jpg','Rp 835.000','Rp 1.670.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/lukiskontemporer.jpg">
+    <h3>Batik Lukis Kontemporer</h3>
+    <span>Rp 1.670.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Lukis Kontemporer','Rp 1.670.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 20 -->
+  <div class="card" onclick="bukaModal('Batik Lebar Double','gambar/lebar.jpg','Rp 100.000','Rp 200.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/lebar.jpg">
+    <h3>Batik Lebar Double</h3>
+    <span>Rp 200.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Batik Lebar Double','Rp 200.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 21 -->
+  <div class="card" onclick="bukaModal('Daster Kipas','gambar/daster1.jpg','Rp 50.000','Rp 100.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/daster1.jpg">
+    <h3>Daster Kipas</h3>
+    <span>Rp 100.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Daster Kipas','Rp 100.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+  <!-- 22 -->
+  <div class="card" onclick="bukaModal('Daster Kimono','gambar/daster kimono.jpg','Rp 125.000','Rp 250.000')">
+    <div class="card-overlay"></div>
+    <img src="gambar/daster kimono.jpg">
+    <h3>Daster Kimono</h3>
+    <span>Rp 250.000</span>
+    <button class="btn-keranjang" onclick="event.stopPropagation(); tambahKeranjang('Daster Kimono','Rp 250.000', this)">
+      <i class="fa-solid fa-cart-plus"></i>
+    </button>
+  </div>
+
+</section>
+
+<!-- FLOATING CART -->
+<div id="floating-cart" onclick="toggleCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- PANEL KERANJANG -->
+<div id="cart-panel">
+  <h3>Keranjang</h3>
+
+  <!-- LIST PRODUK -->
+  <ul id="list-keranjang"></ul>
+
+  <!-- TOTAL -->
+  <h4 id="total-harga">Total: Rp 0</h4>
+
+  <!-- FORM PEMBELI -->
+  <div class="form-pembeli">
+    <input type="text" id="nama" placeholder="Nama Anda">
+    <input type="text" id="alamat" placeholder="Alamat Lengkap">
+    <textarea id="catatan" placeholder="Catatan (opsional)"></textarea>
+  </div>
+
+  <!-- TOMBOL WA -->
+  <button onclick="kirimWA()">Pesan via WhatsApp</button>
+</div>
+
+<!-- POPUP DETAIL PRODUK -->
+<div id="modal-produk" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="tutupModal()">&times;</span>
+
+    <img id="modal-img" src="" alt="">
+
+    <h3 id="modal-nama"></h3>
+
+    <!-- PILIH UKURAN -->
+    <div class="opsi">
+      <p>Pilih Ukuran:</p>
+      <button onclick="pilihUkuran(50)" id="btn50">50 cm</button>
+      <button onclick="pilihUkuran(100)" id="btn100">100 cm</button>
+    </div>
+
+    <!-- HARGA -->
+    <p class="harga-modal" id="harga-terpilih">Rp -</p>
+
+    <!-- QTY -->
+    <div class="qty-box">
+      <button onclick="kurangQty()">-</button>
+      <span id="qty">1</span>
+      <button onclick="tambahQty()">+</button>
+    </div>
+
+    <!-- BUTTON -->
+    <button class="btn-modal" onclick="tambahDariModal()">
+      + Masukkan Keranjang
+    </button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
